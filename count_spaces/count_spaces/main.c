@@ -5,16 +5,17 @@ int count_spaces(const char s[]);
 
 int main()
 {
-    printf("%d\n", count_spaces("abc22d"));
+    printf("%d\n", count_spaces("ab c 22d"));
     
 }
 
 int count_spaces(const char s[])
-{
-    const char *p = s;
-    while(*p)
-        p++;
+{s
+    int count = 0;
+    while(*s)
+        if(*s++ == ' ')
+            count++;
 
         
-    return p - s;
+    return count;
 }
