@@ -14,7 +14,7 @@ int main()
 void reverse(char *message)
 {
     char *p1, *p2;
-    int len = strlen(message);
+    int len = (int)strlen(message);
     p1 = message;
     p2 = message + len - 1;
     
